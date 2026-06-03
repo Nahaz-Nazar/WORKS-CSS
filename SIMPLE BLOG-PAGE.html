@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line{
+            font-weight: bold;
+        }
+        p::first-letter{
+            font-size: 30px;
+            color: red;
+        }
+
+        blockquote::before{
+            content:"#";
+
+        }
+
+        a:link {color: blue;}
+        a:visited{color: purple;}
+        a:hover{ text-decoration: underline;}
+    
+
+        h4{
+            display: inline;
+
+        }
+        h4+h4{
+            color: green;
+
+        }
+    </style>
+</head>
+<body>
+    <div><h2>My blog post</h2>
+    <h5>author: john</h5>
+    <p>This is a simple blog post content for demonstration</p>
+    <blockquote>css makes web pages attractive.</blockquote>
+
+    <a href="#">link 1</a>
+    <a href="#">link 2</a>
+       
+       <br><br>
+
+    <h4>Heading 1</h4>   
+    <h4>Heading 2</h4>   
+    
+    </div>
+
+</body>
+</html>
