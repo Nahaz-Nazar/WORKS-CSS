@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.blog-section{
+  display:flex;
+  gap:10px;
+}
+
+/* HTTPS links in red */
+a[href^="https"]{
+  color:red;
+}
+
+/* .jpg images with rounded corners */
+img[src$=".png"]{
+  border-top-right-radius:30px;
+  border-bottom-left-radius:30px;
+}
+
+/* Small screens */
+@media (max-width:600px){
+  .blog-section{
+    flex-direction:column;
+  }
+  .blog-post{
+    font-size:40px;
+  }
+}
+
+/* Portrait mode */
+@media (orientation:portrait){
+  .blog-section{
+    background:lightyellow;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="blog-section">
+
+  <div class="blog-post">
+    <h3>Blog 1</h3>
+    <img src="FEATURED-IMG(1).png" width="70%" height="300px"  object-fit="cover">
+    <br>
+    <a href="https://www.outbrain.com/blog/how-to-write-your-first-blog…
+     </div>
+
+  <div class="blog-post">
+    <h3>Blog 2</h3>
+    <img src="FEATURED-IMG(2).png" width="100%" height="300px"  object-fit="cover">
+    <br>
+    <a href="https://neilpatel.com/blog/how-to-write-blog-post/">Read More</a>
+  </div>
+
+</div>
+
+</body>
+</html>
