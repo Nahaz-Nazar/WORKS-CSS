@@ -1,0 +1,35 @@
+/* Product Card */
+.product-card {
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+/* Product Image */
+.product-image {
+    width: 100%;
+    border: 2px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Small Screens */
+@media (max-width: 600px) {
+    .product-card {
+        text-align: center;
+        margin: auto;
+    }
+
+    h2,
+    button {
+        font-size: 14px;
+    }
+}
+
+/* Landscape Mode */
+@media (orientation: landscape) {
+    .product-card {
+        background-color: lightblue;
+    }
+}
